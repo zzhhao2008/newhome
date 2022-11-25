@@ -1,1 +1,157 @@
-<123
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/index.css">
+	<script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
+	<title>ZSV NEWHOME</title>
+</head>
+<style>
+	.fadeIn {
+		-webkit-animation: fadeInDown 1s;
+		animation: fadeInDown 1s;
+	}
+
+	@keyframes fadeInDown {
+		0% {
+			-webkit-transform: translate3d(0, -20%, 0);
+			-webkit-transform: translate3d(0, -20%, 0);
+			transform: translate3d(0, -20%, 0);
+			transform: translate3d(0, -20%, 0);
+			opacity: 0;
+		}
+
+		100% {
+			-webkit-transform: none;
+			transform: none;
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes fadeInDown {
+		0% {
+			-webkit-transform: translate3d(0, -10%, 0);
+			opacity: 0;
+		}
+
+		100% {
+			-webkit-transform: none;
+			opacity: 1;
+		}
+	}
+</style>
+<script>$(document).ready(function () {
+		var domain = "cn-hb-sy-2.starryfrp.com:45337";
+		$("#translate").click(function () {
+			window.open("https://fanyi.baidu.com/");
+		});
+		$("#email163").click(function () {
+			window.open("https://mail.163.com/");
+		});
+		$("#github").click(function () {
+			window.open("https://github.com/");
+		});
+		$("#gitee").click(function () {
+			window.open("https://gitee.com/");
+		});
+		$("#bilibili").click(function () {
+			window.open("https://www.bilibili.com/");
+		});
+		$("#musicqq").click(function () {
+			window.open("https://music.qq.com/");
+		});
+		$("#diskStation").click(function () {
+			window.open("http://" + domain + "/nas");
+		});
+		$("#old").click(function () {
+			window.open("http://" + domain + "/");
+		});
+		$("#clock").click(function () {
+			window.open("http://" + domain + "/clock");
+		});
+		$("#zos").click(function () {
+			window.open("http://" + domain + "/ZOS");
+		});
+
+
+	})</script>
+
+<body>
+	<div class="container fadeIn">
+		<!--第一行-->
+		<div class="box" id="translate">
+			<div class="img">
+				<img src="static/picture/translate.png">
+			</div>
+			<p>百度翻译</p>
+		</div>
+		<div class="box" id="baidu">
+			<div class="img">
+				<img src="static/picture/bing.png">
+			</div>
+			<p>必应</p>
+		</div>
+		<div class="box" id="email163">
+			<div class="img">
+				<img src="static/picture/email163.png">
+			</div>
+			<p>163邮箱</p>
+		</div>
+
+
+		<div class="box" id="github">
+			<div class="img">
+				<img src="static/picture/github.png">
+			</div>
+			<p>GitHub</p>
+		</div>
+		<div class="box" id="gitee">
+			<div class="img">
+				<img src="static/picture/gitee.png">
+			</div>
+			<p>码云</p>
+		</div>
+
+		<div class="box" id="bilibili">
+			<div class="img">
+				<img src="static/picture/bilibili.png">
+			</div>
+			<p>哔哩哔哩</p>
+		</div>
+		<div class="box" id="musicqq">
+			<div class="img">
+				<img src="static/picture/musicQQ.png">
+			</div>
+			<p>QQ音乐</p>
+		</div>
+		<div class="box" id="clock">
+			<div class="img">
+				<img src="static/picture/clock.png">
+			</div>
+			<p>时钟</p>
+		</div>
+		<div class="box" id="zos">
+			<div class="img">
+				<img src="static/picture/zos.png">
+			</div>
+			<p>ZOS WEBSITE</p>
+		</div>
+		<div class="box" id="diskStation">
+			<div class="img">
+				<img src="static/picture/nas.png">
+			</div>
+			<p>Nas云盘</p>
+		</div>
+		<div class="box" id="old">
+			<div class="img">
+				<img src="/icon.png">
+			</div>
+			<p>旧版主页/更多功能</p>
+		</div>
+	</div>
+</body>
+
+
+</html>
